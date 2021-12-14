@@ -24,8 +24,8 @@ puts "Creation of one Trip"
 Travel.create!(
   user: user_one,
   team: team_one,
-  name: "À la fût",
-  description: "Exceptional beers aged in oak barrels",
+  name: "Trip to Barcelona",
+  description: "Heyyo guys! Let's plan a trip to BArcelona for 10 days, what you think? ✌🏼",
   location: "Barcelona",
   price: rand(59..258),
   start_date: "2021-12-14",
