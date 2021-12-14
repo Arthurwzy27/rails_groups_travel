@@ -1,3 +1,3 @@
 class Group < ApplicationRecord
-  belongs_to :trips
+  # has_many :trips
 end
