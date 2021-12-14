@@ -1,0 +1,20 @@
+<h1>Index of Travels</h1>
+
+<br>
+
+<div class="travel-card">
+  <% @travels.each do |travel| %>
+    <h2><%= travel.name %></h2>
+    <p><%= travel.description %></p>
+    <h3><%= travel.location %></h3>
+    <p><%= travel.price %> €</p>
+    <p><%= travel.start_date %></p>
+    <p><%= travel.end_date %></p>
+  <% end %>
+</div>
+<div class="team-card">
+  <% @teams.each do |team| %>
+    <h2><%= team.name %></h2>
+    <p><%= team.capacity %></p>
+  <% end %>
+</div>

@@ -1,4 +1,4 @@
 class Trip < ApplicationRecord
-  belongs_to :users
-  belongs_to :groups
+  # belongs_to :user
+  # belongs_to :group
 end
