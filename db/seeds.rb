@@ -14,8 +14,16 @@ user_one = User.create!(email: "test1@example.com", password: "password")
 puts "------------------------------------------------------------------"
 puts "Creating first Team"
 team_one = Team.create!(
-  name: "BoyzGang",
+  name: "Boyz Gang 🐺",
   capacity: 5
+)
+team_two = Team.create!(
+  name: "Coding Gang 👨🏼‍💻",
+  capacity: 21
+)
+team_three = Team.create!(
+  name: "Besties 🍻",
+  capacity: 9
 )
 
 puts "------------------------------------------------------------------"
@@ -30,4 +38,24 @@ Travel.create!(
   price: rand(59..258),
   start_date: "2021-12-14",
   end_date: "2021-12-23"
+)
+Travel.create!(
+  user: user_one,
+  team: team_three,
+  name: "Vamos to Paris",
+  description: "Paris for 10 days, who's down?! 🍻",
+  location: "Paris",
+  price: rand(59..258),
+  start_date: "2022-01-11",
+  end_date: "2022-01-21"
+)
+Travel.create!(
+  user: user_one,
+  team: team_two,
+  name: "Bali",
+  description: "Wanna go to Bali?",
+  location: "Bali",
+  price: rand(59..258),
+  start_date: "2021-12-24",
+  end_date: "2022-01-17"
 )
