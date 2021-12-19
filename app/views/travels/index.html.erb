@@ -4,12 +4,14 @@
   <div class="travel-card mr-5">
     <% @travels.each do |travel| %>
       <h2><%= travel.name %></h2>
-      <p><%= travel.description %></p>
-      <p><%= travel.location %></p>
-      <p><%= travel.price %> €</p>
       <div class="travel-date d-flex m-5">
         <p><%= travel.start_date %></p>
         <p><%= travel.end_date %></p>
+      </div>
+      <p><%= travel.description %></p>
+      <div class="price-location d-flex p-5">
+        <p><%= travel.location %></p>
+        <p><%= travel.price %> €</p>
       </div>
     <% end %>
   </div>
